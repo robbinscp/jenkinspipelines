@@ -18,7 +18,8 @@ pipeline {
                 submitter 'DevOps'
             }
             steps {
-                echo "This has been approved for release to production!"
+                echo "This has been approved for release to production"
+                echo "Pushing code to prod!"
             }
         }
     }
