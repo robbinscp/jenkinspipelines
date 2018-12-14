@@ -14,7 +14,7 @@ pipeline {
         stage('push-to-prod') {
             input {
                 message 'Is this version ready for Production?'
-                input 'Yes'
+                ok 'Yes'
                 submitter 'DevOps'
             }
             steps {
