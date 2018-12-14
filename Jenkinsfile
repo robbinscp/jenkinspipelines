@@ -15,7 +15,7 @@ pipeline {
             input {
                 message 'Is this version ready for Production?'
                 ok 'Yes'
-                submitter 'Roadies-Admins'
+                submitter 'Roadies-Admins, DevOps'
             }
             steps {
                 echo "This has been approved for release to production"
