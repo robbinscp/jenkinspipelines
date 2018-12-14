@@ -11,5 +11,12 @@ pipeline {
                 echo "Testing more things!"
             }
         }
+        stage('push-to-prod') {
+            input message: 'Are this version ready for Production?'
+            submitter: 'DevOps'
+            steps {
+                echo "This has been approved for release to production!"
+            }
+        }
     }
 }
