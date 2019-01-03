@@ -13,7 +13,7 @@ pipeline {
         }
         stage('push-to-prod') {
             input {
-                message 'Is this version ready for Production?  Yes, No, Maybe?'
+                message 'Is this version ready for Production?  Yes No?'
                 ok 'Yes'
                 submitter 'Roadies-Admins, DevOps'
             }
