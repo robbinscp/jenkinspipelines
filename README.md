@@ -1,2 +1,2 @@
 # jenkinspipelines
-Close
+Closer
