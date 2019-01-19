@@ -1,2 +1,2 @@
 # jenkinspipelines
-Closer, I think
+Closer
