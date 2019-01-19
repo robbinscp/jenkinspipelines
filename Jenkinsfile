@@ -1,5 +1,5 @@
 pipeline {
-    agent { any }
+    agent any 
     stages {
         stage('build') {
             steps {
@@ -10,4 +10,21 @@ pipeline {
                 echo "Testing more things!"
             }
         }
+        stage('test') {
+            steps {
+                echo "Testing more things!"
+            }
+        }
+        stage('push-to-prod') {
+            input {
+                message 'Is this version ready for Production?  Yes No?'
+                ok 'Yes'
+                submitter 'Roadies-Admins, DevOps'
+            }
+            steps {
+                echo "This has been approved for release to production"
+                echo "Pushing code to prod!"
+            }
+        }
     }
+}
